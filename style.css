@@ -132,6 +132,7 @@ section.ativo {
     gap: 10px;
     left: 80px;
     width: 30px;
+    z-index: 10;
     bottom: 80px;
     display: flex;
     position: absolute;
@@ -170,6 +171,7 @@ section.ativo {
     display: none;
 }
 .menu {
+    z-index: 10;
     right: 80px;
     display: flex;
     position: absolute;
