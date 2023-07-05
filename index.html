@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bianca Barcelos</title>
+    <link rel="icon" type="image/x-icon" href="assets/favIcon.png">
+</head>
+<body>
+    <header></header>
+    <main>
+        <a href="/">
+            <picture>
+                <source media="(max-width:768px)" srcset="assets/logo-reduzida-on.png" />
+                <img id="logo" src="assets/logo-on.png" alt="Logo da Bianca, uma borboleta e ao lado escrito Bianca Barcelos" />
+            </picture>
+        </a>
+        <ul class="marcador-mouse">
+            <li class="atual" onclick="selecionaPagina(1)" data-marcador="1"></li>
+            <li onclick="selecionaPagina(2)" data-marcador="2"></li>
+            <li onclick="selecionaPagina(3)" data-marcador="3"></li>
+            <li onclick="selecionaPagina(4)" data-marcador="4"></li>
+            <li onclick="selecionaPagina(5)" data-marcador="5"></li>
+            <li onclick="selecionaPagina(6)" data-marcador="6"></li>
+            <li onclick="selecionaPagina(7)" data-marcador="7"></li>
+            <li onclick="selecionaPagina(8)" data-marcador="8"></li>
+        </ul>
+        <span class="hamburguer esconde-item" onclick="abreMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </span>
+        <ul class="menu esconde-item">
+            <li class="fechar-menu" onclick="fechaMenu()"></li>
+            <li class="atual" onclick="selecionaPagina(2)" data-marcador="2">
+                <span class="font-menu">SOBRE MIM</span>
+            </li>
+            <li onclick="selecionaPagina(3)" data-marcador="3">
+                <span class="font-menu">HABILIDADES</span>
+            </li>
+            <li onclick="selecionaPagina(4)" data-marcador="4">
+                <span class="font-menu">TRABALHO</span>
+            </li>
+            <li onclick="selecionaPagina(5)" data-marcador="5">
+                <span class="font-menu">PORTFÓLIO</span>
+            </li>
+            <li onclick="selecionaPagina(6)" data-marcador="6">
+                <span class="font-menu">FORMAÇÃO</span>
+            </li>
+            <li onclick="selecionaPagina(7)" data-marcador="7">
+                <span class="font-menu">EXPERIÊNCIA</span>
+            </li>
+        </ul>
+        <div class="btn-proxima-pagina esconde-item">
+            <img src="assets/seta-viva-magenta.png" alt="Seta para próxima página">
+            <img id="seta-transparente" src="assets/seta-transparente.png" alt="Seta para próxima página">
+        </div>
+        <section id="pagina-1" class="ativo">
+            <div class="conteudo flex">
+                <div id="coluna-texto-capa">
+                    <div>
+                        <div class="espelho">
+                        </div>
+                        <h2 class="font-subtitulo-capa"><span class="destaque-azul-claro">OIEE,</span> SOU BIANCA BARCELOS</h2>
+                        <div class="flip-animation">
+                            <h1 class="font-titulo-capa flip-animation-item"><span class="destaque-viva-magenta">WEB</span> Developer</h1>
+                            <h2 class="font-titulo-capa flip-animation-item"><span class="destaque-viva-magenta">UI/UX</span> Designer</h2>
+                            <h2 class="font-titulo-capa flip-animation-item"><span class="destaque-viva-magenta">WEB</span> Developer</h2>
+                        </div>
+                    </div>
+                    <a class="botao" onclick="selecionaPagina(2)">ME CONHEÇA</a>
+                </div>
+                <div id="coluna-imagem-capa">
+                    <img src="assets/bianca-barcelos.png" alt="Foto Bianca com cabelo solto na altura dos ombros, com roupa jeans, em pé com as mãos no bolso">
+                </div>  
+            </div>
+            <div class="redes-sociais flex">
+                <div>
+                    <a href="https://github.com/BiancaBarcelos" target="_blank">
+                        <img src="assets/logo-github.png" alt="Git Hub">
+                        <img class="item" src="assets/logo-github-on.png" alt="Git Hub">
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.linkedin.com/in/bianca-barcelos-a98255114/" target="_blank">
+                        <img src="assets/logo-linkedin.png" alt="Linkedin">
+                        <img class="item" src="assets/logo-linkedin-on.png" alt="Linkedin">
+                    </a>
+                </div>
+                <div>
+                    <a href="https://api.whatsapp.com/send/?phone=5548991109898&text=Temos+interesse+em+te+contratar&type=phone_number&app_absent=0" target="_blank">
+                        <img src="assets/logo-whatsapp.png" alt="WhatsApp">
+                        <img class="item" src="assets/logo-whatsapp-on.png" alt="WhatsApp">
+                    </a>
+                </div>
+                <div>
+                    <a href="mailto:biancassbarcelos@gmail.com">
+                        <img src="assets/logo-email.png" alt="e-Mail">
+                        <img class="item" src="assets/logo-email-on.png" alt="e-Mail">
+                    </a>
+                </div>
+                <div>
+                    <a href="https://instagram.com/bisilvabarcelos?igshid=YmMyMTA2M2Y=" target="_blank">
+                        <img src="assets/logo-instagram.png" alt="Instagram">
+                        <img class="item" src="assets/logo-instagram-on.png" alt="Instagram">
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.facebook.com/bianca.silva.7587" target="_blank">
+                        <img src="assets/logo-facebook.png" alt="Facebook">
+                        <img class="item" src="assets/logo-facebook-on.png" alt="Facebook">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="pagina-2">
+            <div class="conteudo-centro flex">
+                <div id="coluna-imagem-pagina-2">
+                    <img src="assets/foto-pagina-2.png" alt="Foto Bianca cabelo solto, sorrindo com um vestido amarelo e fundo azul claro">
+                </div>
+                <div id="coluna-texto-pagina-2">
+                    <div class="font-titulo texto">
+                        <h3><span class="destaque-azul-claro">OIEE,</span>  EU SOU<br>BIANCA BARCELOS</h3>
+                        <div class="flex">
+                            <ul>
+                                <li class="dados-pessoais flex">
+                                    <span class="font-texto">Nome</span>
+                                    <span class="font-texto">:</span>
+                                    <span class="font-texto">Bianca Silva Barcelos</span>
+                                </li>
+                                <li class="dados-pessoais flex">
+                                    <span class="font-texto">Data de Nascimento</span>
+                                    <span class="font-texto">:</span>
+                                    <span class="font-texto">25 de dezembro de 1997</span>
+                                </li>
+                                <li class="dados-pessoais flex">
+                                    <span class="font-texto">Endereço</span>
+                                    <span class="font-texto">:</span>
+                                    <span class="font-texto">Servidão Cana da Índia,<br>Florianópolis, SC - Brasil</span>
+                                </li>
+                                <li class="dados-pessoais flex">
+                                    <span class="font-texto">e-Mail</span>
+                                    <span class="font-texto">:</span>
+                                    <span class="font-texto">biancassbarcelos@gmail.com</span>
+                                </li>
+                                <li class="dados-pessoais flex">
+                                    <span class="font-texto">CNH</span>
+                                    <span class="font-texto">:</span>
+                                    <span class="font-texto">Categoria B</span>
+                                </li>
+                                <li class="dados-pessoais flex">
+                                    <span class="font-texto">Telefone</span>
+                                    <span class="font-texto">:</span>
+                                    <span class="font-texto">+55 (48) 9 9110-9898</span>
+                                </li>
+                                <li class="dados-pessoais flex">
+                                    <span class="font-texto">Freelance</span>
+                                    <span class="font-texto">:</span>
+                                    <span class="font-texto">Disponível</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section id="pagina-3">
+            <div class="flex conteudo-centro">
+                <div id="coluna-texto-pagina-3">
+                    <div class="font-titulo">
+                        <div>
+                            <h3><span class="destaque-azul-claro">MINHAS</span><br>HABILIDADES</h3>
+                            <div class="flex habilidade">
+                                <ul>
+                                    <li class="lista-habilidade">
+                                        <span class="font-texto">Minuciosa</span>
+                                    </li>
+                                    <li class="lista-habilidade">
+                                        <span class="font-texto">Comunicativa</span>
+                                    </li>
+                                    <li class="lista-habilidade">
+                                        <span class="font-texto">Design System</span>
+                                    </li>
+                                    <li class="lista-habilidade">
+                                        <span class="font-texto">Prototipagem Ágil</span>
+                                    </li>
+                                    <li class="lista-habilidade">
+                                        <span class="font-texto">Organizada na Execução</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="coluna-grafico-pagina-3">
+                    <div class="flex lista-habilidade-2">
+                        <div class="flex">
+                            <p class="font-texto">Figma</p>
+                            <div>
+                                <div class="grafico-habilidade" data-conhecimento="340">
+                                    <span></span>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <p class="font-texto">VSCode</p>
+                            <div>
+                                <div class="grafico-habilidade" data-conhecimento="270">
+                                    <span></span>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <p class="font-texto">HTML</p>
+                            <div>
+                                <div class="grafico-habilidade" data-conhecimento="310">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <p class="font-texto">CSS</p>
+                            <div>
+                                <div class="grafico-habilidade" data-conhecimento="310">
+                                    <span></span>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <p class="font-texto">JS</p>
+                            <div>
+                                <div class="grafico-habilidade" data-conhecimento="280">
+                                    <span></span>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <p class="font-texto">Git</p>
+                            <div>
+                                <div class="grafico-habilidade" data-conhecimento="240">
+                                    <span></span>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="pagina-4">
+            <div class="flex">
+                <div id="coluna-texto-pagina-4">
+                    <div class="font-titulo">
+                        <div>
+                            <h3><span class="destaque-azul-claro">PROCESSO</span> DE<br>TRABALHO</h3>
+                            <div class="trabalho">
+                                <ul class="flex">
+                                    <li class="lista-trabalho flex">
+                                        <div class="icone-trabalho">
+                                            <img src="assets/briefing.png" alt="Icone pasta, cor azul claro">
+                                        </div>
+                                        <div class="texto-trabalho">
+                                            <h4 class="font-subtitulo">Briefing</h4>
+                                            <p class="font-texto">Reunião de levantamento de pré requisitos para iniciar a criação dos Wireframes.</p>
+                                        </div>
+                                    </li>
+                                    <li class="lista-trabalho flex">
+                                        <div class="icone-trabalho">
+                                            <img src="assets/aprovacao-layout.png" alt="Icone aperto de mão, cor azul claro">
+                                        </div>
+                                        <div class="texto-trabalho">
+                                            <h4 class="font-subtitulo">Aprovação Layout</h4>
+                                            <p class="font-texto">Realizo a prototipagem para desktop e mobile e apresento ao cliente.</p>
+                                        </div>
+                                    </li>
+                                    <li class="lista-trabalho flex">
+                                        <div class="icone-trabalho">
+                                            <img src="assets/pesquisa.png" alt="Icone lâmpada, cor azul claro">
+                                        </div>
+                                        <div class="texto-trabalho">
+                                            <h4 class="font-subtitulo">Pesquisa</h4>
+                                            <p class="font-texto">Com base nas informações passadas no Briefing busco por referências.</p>
+                                        </div>
+                                    </li>
+                                    <li class="lista-trabalho flex">
+                                        <div class="icone-trabalho">
+                                            <img src="assets/desenvolvimento.png" alt="Icone computador, cor azul claro">
+                                        </div>
+                                        <div class="texto-trabalho">
+                                            <h4 class="font-subtitulo">Desenvolvimento</h4>
+                                            <p class="font-texto">Desenvolvo o projeto com base na aprovação do layout.</p>
+                                        </div>
+                                    </li>
+                                    <li class="lista-trabalho flex">
+                                        <div class="icone-trabalho">
+                                            <img src="assets/design.png" alt="Icone engrenagem, cor azul claro">
+                                        </div>
+                                        <div class="texto-trabalho">
+                                            <h4 class="font-subtitulo">Design</h4>
+                                            <p class="font-texto">Crio o Wireframe para aprovação e após validação, monto o Layout final.</p>
+                                        </div>
+                                    </li>
+                                    <li class="lista-trabalho flex">
+                                        <div class="icone-trabalho">
+                                            <img src="assets/produto-final.png" alt="Icone caixa brilhante, cor azul claro">
+                                        </div>
+                                        <div class="texto-trabalho">
+                                            <h4 class="font-subtitulo">Produto Final</h4>
+                                            <p class="font-texto">Após aprovação do cliente o projeto será publicado on-line.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="pagina-5">
+            <div class="flex">
+                <div class="font-titulo">
+                    <h3 class="destaque-azul-claro">PORTFÓLIO</h3>
+                </div>
+                <div id="cards-celular" class="flex">
+                    <div class="flex">
+                        <div class="card">
+                            <div class="card-mock">
+                                <img src="assets/mockUp-portfolio.png" alt="Celular transparente">
+                                <img class="site" src="assets/centelha-mock.png" alt="">
+                            </div>
+                            <div class="texto-portfolio">
+                                <h4 class="font-texto">Centelha Digital</h4>
+                                <p class="font-data">Projeto layout do site da minha empresa.</p>
+                            </div>
+                            <div class="flex botoes">
+                                <a class="botao" href="https://www.figma.com/proto/Ebp9mRuZz5HCBvZGZYLYTG/Centelha-Digital?page-id=0%3A1&node-id=12%3A1342&viewport=226%2C899%2C0.18&scaling=scale-down&starting-point-node-id=12%3A1342&show-proto-sidebar=1" target="_blank">DESKTOP</a>
+                                <a class="botao" href="https://www.figma.com/proto/Ebp9mRuZz5HCBvZGZYLYTG/Centelha-Digital?page-id=0%3A1&node-id=1%3A3123&viewport=226%2C899%2C0.18&scaling=scale-down&starting-point-node-id=1%3A3123&show-proto-sidebar=1" target="_blank">MOBILE</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-mock">
+                                <img src="assets/mockUp-portfolio.png" alt="Celular transparente">
+                                <img class="site" src="assets/mb-transfer-mock.png" alt="">
+                            </div>
+                            <div class="texto-portfolio">
+                                <h4 class="font-texto">MB Transfer</h4>
+                                <p class="font-data">Prototipagem conclusão de curso, renovação de um site já existente.</p>
+                            </div>
+                            <div class="flex botoes">
+                                <a class="botao" href="https://www.figma.com/proto/wu7McnnI79xxjJgcVQjdwE/Portif%C3%B3lio?node-id=44%3A463&scaling=scale-down&page-id=0%3A1&starting-point-node-id=44%3A463&show-proto-sidebar=1" target="_blank">DESKTOP</a>
+                                <a class="botao" href="https://www.figma.com/proto/wu7McnnI79xxjJgcVQjdwE/Portif%C3%B3lio?node-id=50%3A475&scaling=scale-down&page-id=0%3A1&starting-point-node-id=50%3A475" target="_blank">MOBILE</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="em-breve card-mock">
+                                <img src="assets/mockUp-portfolio.png" alt="Celular transparente">
+                                <img class="site" src="assets/em-breve-portfolio.png" alt="Em breve">
+                            </div>
+                            <div class="texto-portfolio">
+                                <h4 class="font-texto">Em Breve</h4>
+                                <p class="font-data">Próximo Projeto em andamento...</p>
+                            </div>
+                            <div class="flex botoes botao-inativo">
+                                <a class="botao">DESKTOP</a>
+                                <a class="botao">MOBILE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+        </section>
+        <section id="pagina-6">
+            <div class="font-titulo">
+                <div>
+                    <h3 class="destaque-azul-claro">FORMAÇÃO</h3>
+                    <div class="formacoes">
+                        <ul class="flex">
+                            <li class="linha"></li>
+                            <li class="itens-curso flex">
+                                <div class="icone-curso">
+                                    <div>
+                                        <p class="font-menu">01</p>
+                                        <p class="font-data">2023</p>
+                                    </div>
+                                </div>
+                                <div class="accordion">
+                                    <div class="texto-curso">
+                                        <h4 class="font-subtitulo">TEC.EM SISTEMAS PARA INTERNET</h4>
+                                        <p class="font-texto">Senac</p>
+                                        <p class="font-data">Em andamento, estou fazendo graduação para minha capacitação profissional.</p>
+                                        <a class="botao" href="https://drive.google.com/drive/folders/1XJb69cBfqIFnHZgvjJjKaG4dk2jKJIR3?usp=drive_link" target="_blank">EM BREVE</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="itens-curso flex">
+                                <div class="icone-curso">
+                                    <div>
+                                        <p class="font-menu">02</p>
+                                        <p class="font-data">2023</p>
+                                    </div>
+                                </div>
+                                <div class="accordion">
+                                    <div class="texto-curso">
+                                        <h4 class="font-subtitulo">PROGRAMAÇÃO UX & DESIGN</h4>
+                                        <p class="font-texto">Alura</p>
+                                        <p class="font-data">Em andamento, estou me profissionalizando nos cursos da plataforma.</p>
+                                        <a class="botao" href="https://drive.google.com/drive/folders/1ma0zb0VVYXVJkQue0tq6aVAJRLygTZ6_?usp=drive_link" target="_blank">CERTIFICADOS</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="itens-curso flex">
+                                <div class="icone-curso">
+                                    <div>
+                                        <p class="font-menu">03</p>
+                                        <p class="font-data">2022</p>
+                                    </div>
+                                </div>
+                                <div class="accordion">
+                                    <div class="texto-curso">
+                                        <h4 class="font-subtitulo">FIGMA UI/UX</h4>
+                                        <p class="font-texto">Udemy</p>
+                                        <p class="font-data">Curso completo do básico ao avançado de Design na plataforma Figma.</p>
+                                        <a class="botao" href="https://drive.google.com/file/d/1ku5cwdYqzup9zW1FQtenRx6mWOwIfw73/view?usp=drive_link" target="_blank">CERTIFICADO</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="itens-curso flex">
+                                <div class="icone-curso">
+                                    <div>
+                                        <p class="font-menu">04</p>
+                                        <p class="font-data">2015</p>
+                                    </div>
+                                </div>
+                                <div class="accordion">
+                                    <div class="texto-curso">
+                                        <h4 class="font-subtitulo">DESENHISTA TÉCNICO</h4>
+                                        <p class="font-texto">Senai</p>
+                                        <p class="font-data">Qualificação profissional técnica em desenhista de arquitetura.</p>
+                                        <a class="botao" href="https://drive.google.com/drive/folders/1uzgAG68392HOLuSTPrpq_PyLNHqQupoz?usp=drive_link" target="_blank">CERTIFICADO</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="itens-curso flex ultimo">
+                                <div class="icone-curso">
+                                    <div>
+                                        <p class="font-menu">05</p>
+                                        <p class="font-data">2015</p>
+                                    </div>
+                                </div>
+                                <div class="accordion">
+                                    <div class="texto-curso">
+                                        <h4 class="font-subtitulo">ENSINO MÉDIO</h4>
+                                        <p class="font-texto">Maria Teresa</p>
+                                        <p class="font-data">Formação completa no ensino médio regular da rede de ensino estadual.</p>
+                                        <a class="botao" href="https://drive.google.com/file/d/1fy0qFqK7jJ16ICzeez40rjo6iI_VgSW3/view?usp=drive_link" target="_blank">CERTIFICADO</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="pagina-7">
+            <div class="flex conteudo">
+                <div id="coluna-texto-pagina-7">
+                    <div class="font-titulo">
+                        <div>
+                            <h3><span class="destaque-azul-claro">EXPERIÊNCIA</span><br>PROFISSIONAL</h3>
+                            <div class="flex experiencia">
+                                <p class="font-texto">Após um longo período dedicada a família e ao meu filho, decidi me reinventar e explorar novos horizontes profissionais. Foi quando notei que ser designer e desenvolvedora front-end já fazia parte de mim, com projetos pessoais e para pessoas próximas.</p>
+                                <p class="font-texto">Procurei me aperfeiçoar e estudar desde conceitos até a execução. Sou minuciosa na hora de levantar os requisitos para um projeto e organizada na hora de executar.</p>
+                                <p class="font-texto">Sempre pensando na melhor experiência para o usuário, esteja ele em um celular ou em um computador.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="coluna-imagem-pagina-7">
+                    <div class="flex">
+                        <div class="flex grupo-empresa">
+                            <div class="flex empresa">
+                                <a href="https://centelhadigital.com/" target="_blank">
+                                    <img src="assets/logo-centelha-digital.png" alt="Logo empresa Centelha Digital, uma centelha branco com cinza">
+                                </a>
+                                <div class="itens-empresa">
+                                    <p class="font-subtitulo">CENTELHA DIGITAL</p>
+                                    <p class="font-data">2022 - Atualmente</p>
+                                    <p class="font-texto ultimo-p">Desenvolvemos web sites e landing pages para nossos clientes.</p>
+                                </div>
+                            </div>
+                            <div class="flex empresa">
+                                <a href="https://pipoloucos.com/" target="_blank">
+                                    <img src="assets/logo-pipo-loucos.png" alt="Logo empresa Pipo Loucos, entre arabesco está escrito o nome da empresa com o fundo bege">
+                                </a>
+                                <div class="itens-empresa">
+                                    <p class="font-subtitulo">PIPOLOUCOS</p>
+                                    <p class="font-data">2020 - 2021</p>
+                                    <p class="font-texto ultimo-p">Auxiliar no setor de marketing visual e gerente financeira.</p>
+                                </div>
+                            </div>
+                            <div class="flex empresa">
+                                <a href="https://www.imexmedicalgroup.com.br/" target="_blank">
+                                    <img src="assets/logo-imex.png" alt="Logo empresa Imex, escrito o nome da empresa e uma perna da letra X é colorida">
+                                </a>
+                                <div class="itens-empresa">
+                                    <p class="font-subtitulo">IMEX</p>
+                                    <p class="font-data">2018 - 2019</p>
+                                    <p class="font-texto ultimo-p">Assistente tesouraria, cuidava do cofre físico e conciliação bancária.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="pagina-8">
+            <div class="conteudo-centro flex">
+                <div id="coluna-imagem-pagina-8">
+                    <picture>
+                        <source media="(max-width:768px)" srcset="assets/foto-capa-final-768px.png" />
+                        <img src="assets/foto-capa-final.png" alt="Foto Bianca com cabelo solto na altura dos ombros, com roupa jeans, em pé apontando para a esquerda" />
+                    </picture>
+                </div>  
+                <div id="coluna-texto-pagina-8">
+                    <div>
+                        <div class="espelho">
+                        </div>
+                        <h2 class="font-subtitulo-capa"><span class="destaque-azul-claro">OIEE,</span> SOU BIANCA BARCELOS</h2>
+                        <div class="flip-animation">
+                            <h1 class="font-titulo-capa flip-animation-item"><span class="destaque-viva-magenta">WEB</span> Developer</h1>
+                            <h2 class="font-titulo-capa flip-animation-item"><span class="destaque-viva-magenta">UI/UX</span> Designer</h2>
+                            <h2 class="font-titulo-capa flip-animation-item"><span class="destaque-viva-magenta">WEB</span> Developer</h2>
+                        </div>
+                    </div>
+                    <a class="botao" href="/">OBRIGADA</a>
+                </div>
+            </div>
+            <div class="redes-sociais redes-sociais-vertical flex">
+                <div>
+                    <a href="https://github.com/BiancaBarcelos" target="_blank">
+                        <img src="assets/logo-github.png" alt="Git Hub">
+                        <img class="item" src="assets/logo-github-on.png" alt="Git Hub">
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.linkedin.com/in/bianca-barcelos-a98255114/" target="_blank">
+                        <img src="assets/logo-linkedin.png" alt="Linkedin">
+                        <img class="item" src="assets/logo-linkedin-on.png" alt="Linkedin">
+                    </a>
+                </div>
+                <div>
+                    <a href="https://api.whatsapp.com/send/?phone=5548991109898&text=Temos+interesse+em+te+contratar&type=phone_number&app_absent=0" target="_blank">
+                        <img src="assets/logo-whatsapp.png" alt="WhatsApp">
+                        <img class="item" src="assets/logo-whatsapp-on.png" alt="WhatsApp">
+                    </a>
+                </div>
+                <div>
+                    <a href="mailto:biancassbarcelos@gmail.com">
+                        <img src="assets/logo-email.png" alt="e-Mail">
+                        <img class="item" src="assets/logo-email-on.png" alt="e-Mail">
+                    </a>
+                </div>
+                <div>
+                    <a href="https://instagram.com/bisilvabarcelos?igshid=YmMyMTA2M2Y=" target="_blank">
+                        <img src="assets/logo-instagram.png" alt="Instagram">
+                        <img class="item" src="assets/logo-instagram-on.png" alt="Instagram">
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.facebook.com/bianca.silva.7587" target="_blank">
+                        <img src="assets/logo-facebook.png" alt="Facebook">
+                        <img class="item" src="assets/logo-facebook-on.png" alt="Facebook">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="script.js"></script>
+</body>
+</html>
